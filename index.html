@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,29 +19,120 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Lilita+One&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Lilita+One&family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
-<body class="bg-pale-white text-black">
-    <header></header>
+
+<body class="bg-pale-white font-manrope">
+    <header>
+        <!-- navigation bar -->
+        <div class="navbar bg-bright-rose text-white px-6 lg:px-20 py-5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow font-lilita bg-base-100 rounded-box w-52 text-black">
+                        <li class="mx-3"><a>Home</a></li>
+                        <li class="mx-3"><a>About</a></li>
+                        <li class="mx-3">
+                            <details>
+                                <summary>Men</summary>
+                                <ul class="p-2">
+                                    <li><a>T-shirt</a></li>
+                                    <li><a>Pants</a></li>
+                                    <li><a>Panjabi</a></li>
+                                    <li><a>Jacket</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="mx-3">
+                            <details>
+                                <summary>Women</summary>
+                                <ul class="p-2">
+                                    <li><a>Shirt</a></li>
+                                    <li><a>Pants</a></li>
+                                    <li><a>Skirt</a></li>
+                                    <li><a>Jacket</a></li>
+                                    <li><a>Three Piece</a></li>
+                                    <li><a>Dress</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="mx-3"><a>Blog</a></li>
+                        <li class="mx-3"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-corgette"><img class="w-10" src="images/snowflake.png" alt="">
+                    SnowBell</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal text-base font-lilita px-1 ">
+                    <li class="mx-3"><a>Home</a></li>
+                    <li class="mx-3"><a>About</a></li>
+                    <li class="mx-3">
+                        <details>
+                            <summary>Men</summary>
+                            <ul class="p-2">
+                                <li><a>T-shirt</a></li>
+                                <li><a>Pants</a></li>
+                                <li><a>Panjabi</a></li>
+                                <li><a>Jacket</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="mx-3">
+                        <details>
+                            <summary>Women</summary>
+                            <ul class="p-2">
+                                <li><a>Shirt</a></li>
+                                <li><a>Pants</a></li>
+                                <li><a>Skirt</a></li>
+                                <li><a>Jacket</a></li>
+                                <li><a>Three Piece</a></li>
+                                <li><a>Dress</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="mx-3"><a>Blog</a></li>
+                    <li class="mx-3"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-ghost mx-4 text-lg"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a
+                    class="btn bg-white font-lilita font-medium text-base lg:px-7 text-bright-rose border-2 border-white hover:bg-transparent hover:border-white hover:text-white">Sign
+                    In</a>
+            </div>
+        </div>
+    </header>
 
     <main></main>
 
     <footer></footer>
-    
+
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'pale-white': '#F5F5F5',
-                'new-black': '#252A34',
-                'bright-rose': '#E6A4B4',
-                'pale-blue': '#364F6B',
-                'pale-cyan': '#08D9D6',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'pale-white': '#F5F5F5',
+                        'new-black': '#252A34',
+                        'bright-rose': '#E6A4B4',
+                        'rose-color': '#FF2E63',
+                        'pale-blue': '#364F6B',
+                        'pale-cyan': '#08D9D6',
+                    }
+                }
             }
-          }
         }
     </script>
 </body>
+
 </html>
